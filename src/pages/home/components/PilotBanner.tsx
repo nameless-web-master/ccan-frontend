@@ -1,29 +1,29 @@
-import { Building2, ChevronRight } from 'lucide-react'
+import { Building2, ChevronRight } from "lucide-react";
 
 function PilotBanner() {
   return (
     <section
       id="benefits"
-      className="relative isolate w-full overflow-hidden py-12 text-white md:py-14"
+      className="relative isolate w-full overflow-hidden py-10 text-white md:py-8"
       style={{
-        background: 'linear-gradient(135deg, #0c1f4d 0%, #07173b 100%)',
+        background: "linear-gradient(135deg, #0c1f4d 0%, #07173b 100%)",
       }}
     >
       <div className="container-page relative z-10">
         <div className="grid gap-8 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-10">
           <div
             aria-hidden="true"
-            className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-white/40 text-white"
+            className="inline-flex shrink-0 items-center justify-center rounded-full border-2 border-[#588dd5] text-white p-5"
           >
-            <Building2 className="h-7 w-7" strokeWidth={1.75} />
+            <Building2 size={58} strokeWidth={0.7} />
           </div>
-          <div className="min-w-0">
+          <div className="min-w-0 w-full">
             <h3 className="text-xl font-bold text-white md:text-[28px]">
               Pilot Deployments in Progress
             </h3>
             <p className="mt-2 max-w-[540px] text-[16px] leading-snug text-white/80 md:mt-1.5">
-              CCAN is currently working with select building partners to validate
-              secure courier entry workflows.
+              CCAN is currently working with select building partners to
+              validate secure courier entry workflows.
             </p>
           </div>
           <a
@@ -39,7 +39,7 @@ function PilotBanner() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default PilotBanner
+export default PilotBanner;

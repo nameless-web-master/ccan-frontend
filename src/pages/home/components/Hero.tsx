@@ -5,31 +5,31 @@ import {
   Clock,
   FileText,
   Lock,
-} from 'lucide-react'
-import heroCourier from '../../../assets/main.jpeg'
+} from "lucide-react";
+import heroCourier from "../../../assets/main.jpeg";
 
 const features = [
   {
     icon: ShieldCheck,
-    title: 'Verified Couriers',
-    description: 'Only authorized deliveries get building access',
+    title: "Verified Couriers",
+    description: "Only authorized deliveries get building access",
   },
   {
     icon: Clock,
-    title: 'Real-Time Access',
-    description: 'Temporary access granted in seconds',
+    title: "Real-Time Access",
+    description: "Temporary access granted in seconds",
   },
   {
     icon: FileText,
-    title: 'Complete Visibility',
-    description: 'All entries are logged and auditable',
+    title: "Complete Visibility",
+    description: "All entries are logged and auditable",
   },
   {
     icon: Lock,
-    title: 'Stronger Security',
-    description: 'Reduce tailgating and unauthorized entry',
+    title: "Stronger Security",
+    description: "Reduce tailgating and unauthorized entry",
   },
-]
+];
 
 function Hero() {
   return (
@@ -77,12 +77,12 @@ function Hero() {
       <div className="container-page relative z-20 grid grid-cols-4 gap-6 py-7 pb-14 max-md:grid-cols-2 max-sm:grid-cols-1">
         {features.map(({ icon: Icon, title, description }) => (
           <div key={title} className="flex items-start gap-3.5">
-            <div className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/[0.08] text-white">
-              <Icon size={56} />
+            <div className="inline-flex shrink-0 items-center justify-center rounded-full border border-white/50 text-white p-3 mt-[-10px]">
+              <Icon size={36} />
             </div>
             <div>
               <h3 className="mb-1 text-[15px] font-bold text-white">{title}</h3>
-              <p className="text-[13px] leading-relaxed text-white/70">
+              <p className="text-[14px] leading-relaxed text-white mt-2">
                 {description}
               </p>
             </div>
@@ -90,7 +90,7 @@ function Hero() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
