@@ -30,11 +30,11 @@ function PilotBanner() {
           </div>
           <a
             href="#contact"
-            className="inline-flex shrink-0 items-center justify-center gap-2.5 rounded-xl bg-white px-5 py-3.5 text-sm font-semibold text-[var(--color-primary)] shadow-sm transition-[background,color,transform] duration-200 hover:bg-slate-100 active:translate-y-px max-md:w-full md:justify-center"
+            className="inline-flex shrink-0 items-center justify-center gap-2.5 rounded-xl bg-white px-5 py-3.5 text-sm font-semibold text-primary shadow-sm transition-[background,color,transform] duration-200 hover:bg-slate-100 active:translate-y-px max-md:w-full md:justify-center"
           >
             Request Pilot Information
             <ChevronRight
-              className="h-[18px] w-[18px] shrink-0 text-[var(--color-primary)]"
+              className="h-[18px] w-[18px] shrink-0 text-primary"
               aria-hidden
             />
           </a>

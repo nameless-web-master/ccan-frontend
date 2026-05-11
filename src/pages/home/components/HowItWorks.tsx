@@ -49,7 +49,7 @@ function HowItWorks() {
         <ol className="relative grid grid-cols-5 gap-4 max-lg:grid-cols-2 max-lg:gap-x-4 max-lg:gap-y-9 max-sm:grid-cols-1">
           {steps.map(({ number, title, description, icon }, index) => (
             <li key={number} className="relative px-2 text-center">
-              <div className="relative z-10 mx-auto inline-flex h-24 w-24 items-center justify-center rounded-full border-[2px] border-[var(--color-primary)] bg-white p-[22px] shadow-[0_6px_16px_rgba(37,99,235,0.06)]">
+              <div className="relative z-10 mx-auto inline-flex h-24 w-24 items-center justify-center rounded-full border-2 border-primary bg-white p-[22px] shadow-[0_6px_16px_rgba(37,99,235,0.06)]">
                 <img
                   src={icon}
                   alt=""
