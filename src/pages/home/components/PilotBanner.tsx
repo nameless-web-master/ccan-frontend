@@ -10,21 +10,23 @@ function PilotBanner() {
       }}
     >
       <div className="container-page relative z-10">
-        <div className="grid gap-8 md:grid-cols-[auto_1fr_auto] md:items-center md:gap-10">
-          <div
-            aria-hidden="true"
-            className="inline-flex shrink-0 items-center justify-center rounded-full border-2 border-[#588dd5] text-white p-5"
-          >
-            <Building2 size={58} strokeWidth={0.7} />
-          </div>
-          <div className="min-w-0 w-full">
-            <h3 className="text-xl font-bold text-white md:text-[28px]">
-              Pilot Deployments in Progress
-            </h3>
-            <p className="mt-2 max-w-[540px] text-[16px] leading-snug text-white/80 md:mt-1.5">
-              CCAN is currently working with select building partners to
-              validate secure courier entry workflows.
-            </p>
+        <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-center md:gap-10">
+          <div className="flex items-start gap-4 md:gap-6">
+            <div
+              aria-hidden="true"
+              className="inline-flex shrink-0 items-center justify-center rounded-full border-2 border-[#588dd5] text-white p-3 md:p-5"
+            >
+              <Building2 className="size-8 md:size-[58px]" strokeWidth={0.7} />
+            </div>
+            <div className="min-w-0">
+              <h3 className="text-xl font-bold text-white md:text-[28px]">
+                Pilot Deployments in Progress
+              </h3>
+              <p className="mt-1.5 max-w-[540px] text-[15px] leading-snug text-white/80 md:mt-1.5 md:text-[16px]">
+                CCAN is currently working with select building partners to
+                validate secure courier entry workflows.
+              </p>
+            </div>
           </div>
           <a
             href="#contact"
